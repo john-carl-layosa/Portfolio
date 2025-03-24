@@ -69,8 +69,8 @@ img {
         border-radius: 50%;
         height: 15%;
         width: 15%;
-        background: #f2f2f2;
-        box-shadow:  25px 25px 100px #616161,
+        background: whitesmoke;
+        box-shadow:  25px 25px 100px whitesmoke,
         -25px -25px 100px #ffffff;
       }
 
@@ -168,6 +168,19 @@ h1, h2, p {
 
 }
 
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Send it behind other elements */
+  background-color: beige;
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
 
 
 
