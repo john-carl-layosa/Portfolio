@@ -1,51 +1,58 @@
 
 
     .header {
-        overflow: hidden;
-        background-color: burlywood;
         padding: 10px 5px;
       }
       
       /* Style the header links */
       .header a {
         float: left;
-        color: rgb(72, 41, 1);
+        color: #E85A4F;
         text-align: center;
-        padding: 10px;
+        padding: 12px;
         text-decoration: none;
         font-size: 15px;
         font-family: Arial, Helvetica, sans-serif;
-        line-height: 25px;
         border-radius: 4px;
+        
       }
       
       /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
       .header a.logo {
         font-size: 25px;
-        font-weight: bold;
+        font-weight: bolder;
+        margin-top: -1rem;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         margin-left: 1rem;
       }
+
+      .header a.logo:hover {
+        color: #fff;
+        background-color: transparent;
+        text-shadow: 1px 1px 2px #5F5E5B, 0 0 25px #5F5E5B, 0 0 10px #5F5E5B;
+    }
+
       
       /* Change the background color on mouse-over */
       .header a:hover {
-        background-color: beige;
-        color: black;
+        background-color: #5F5E5B;
+        color: #ffffff;
       }
-      
+
       /* Style the active/current link*/
       .header a.active {
-        background-color: brown;
-        color: white;
+        background-color: #E85A4F;
+        color: #ffffff;
       }
       
       /* Float the link section to the right */
       .header-right {
         float: right;
+        margin-right: 1rem;
       }
       
       /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 800px) {
         .header a {
           float: none;
           display: block;
@@ -61,23 +68,24 @@
         display: flex;
         justify-content: center;
         align-items: center; 
-        margin-top: 3rem;
+        margin-top: 5rem;
 
       }
       
 img {
         border-radius: 50%;
-        height: 15%;
-        width: 15%;
-        background: whitesmoke;
-        box-shadow:  25px 25px 100px whitesmoke,
-        -25px -25px 100px #ffffff;
+        max-width: 250px;
+        height: 250px;
+        box-shadow:  10px 10px 30px #E85A4F,
+        -10px -10px 30px #E85A4F;
       }
 
-body{
-    background-color: beige;
-    
-}
+      @media screen and (max-width: 800px) {
+        img {
+          height: 220px;
+          width: 220px;
+        }
+      }
 
 .home-content{
     margin-top: 2rem;
@@ -85,7 +93,7 @@ body{
 }
 
 
-h1, h2, p {
+.home-content h1, h2, p {
     max-width: 600px; 
     margin: 10px auto; 
     text-align: justify; 
@@ -93,38 +101,38 @@ h1, h2, p {
   }
   
  
-  h1, h2 {
+  .home-content h1, h2 {
     text-align-last: center; 
   }
   
   
-  h1 {
+  .home-content h1 {
     font-size: 2.5rem;
     font-weight: bold;
     text-align: center;
-    color: #222;
+    color: #5F5E5B;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 0rem;
    
     
   }
   
-  h2 {
+  .home-content h2 {
     font-size: 2rem;
-    color: #222;
+    color: #5F5E5B;
     font-family: Arial, Helvetica, sans-serif;
   
   }
   
-  h2 span {
+  .home-content h2 span {
     font-weight: bold;
-    color: brown; 
+    color: #E85A4F; 
     font-family: Arial, Helvetica, sans-serif;
   }
   
-  p {
-    font-size: 1.2rem;
-    color: #222;
+  .home-content p {
+    font-size: 1.4rem;
+    color: #5F5E5B;
     line-height: 1.5;
     margin-top: 2rem;
     font-family: 'Times New Roman', Times, serif;
@@ -137,30 +145,30 @@ h1, h2, p {
     display: flex;
     justify-content: center; 
     align-items: center;
-    
     margin-top: 5rem;
+    gap: 1%;
 }
 
 
 .icons a {
- 
     justify-content: center;
     align-items: center;
     width: 3rem; 
     height: 3rem;
     font-size: 2rem;
-    color: black;
+    color: #5F5E5B;
+    text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2); 
     transition: 0.3s ease;
 }
 
 .icons a:hover{
-    color: brown;
+    color: #E85A4F;
     transform: scale(1.3)translateY(-5px);
     background-color: transparent;
-    box-shadow: 5px brown;
+    box-shadow: 5px #E85A4F;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .header {
     flex-direction: column;
     text-align: center;
@@ -175,16 +183,134 @@ h1, h2, p {
   width: 100%;
   height: 100%;
   z-index: -1; /* Send it behind other elements */
-  background-color: burlywood;
-
+  background-color: #EAE7DC;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
+.experience-content{
+  float: left;
+  margin-left: -5rem;
+  margin-top: 5rem;
+}
+ 
 
+.experience-content h1 {
+  color: #E85A4F;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.experience-content h2{
+  color: #8E8D8A;
+}
+
+.experience-content p{
+  color: #5F5E5B;
+  font-size: 20px;
+}
 
 .about-content{
-  align-content: center;
-  margin-top: 10rem;
+  float: left;
+  margin-left: -5rem;
+  margin-top: 5rem;
+}
+ 
+
+.about-content h1 {
+  color: #E85A4F;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.about-content h2{
+  color: #8E8D8A;
+}
+
+.about-content p{
+  color: #5F5E5B;
+  font-size: 20px;
+}
+
+.contact-content{
+  text-align: center;
+  margin-top: 13rem;
+}
+
+.contact-content h1{
+  color: #E85A4F;
+  font-size: 35px;
+}
+
+.contact-content h2{
+  color: #5F5E5B;
+  font-size: 24px;
+}
+
+
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px auto;
+  margin-top: 3rem;
+}
+
+.contact-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #E85A4F;
+  color: #EAE7DC;
+  text-decoration: none;
+  border-radius: 50px;
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+  width: 200px;
+  background: #D9534F;
+}
+
+.contact-button .icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-button i {
+  font-size: 25px;
+}
+
+.contact-button span {
+  font-size: 18px;
+  margin-left: 10px;
+  white-space: nowrap;
+  display: none;
+}
+
+.contact-button:hover span {
+  display: inline;
+}
+
+@media (max-width: 800px) {
+  .wrapper {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .contact-content {
+    margin-top: 8vw;
+    padding: 0.5rem;
+  }
 }
