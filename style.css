@@ -248,6 +248,11 @@ img {
   font-size: 24px;
 }
 
+@media (max-width: 480px) {
+  .experience-content, .about-content {
+    margin: 1rem;
+  }
+}
 
 
 .wrapper {
